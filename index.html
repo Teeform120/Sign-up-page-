@@ -2,101 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <tittle>,Medical Sign Up</tittle>
+    <tittle>Hopital Equipment - Home</tittle>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial,  sans-serif;
+            background-color: #f5f9ff;
+            margin: 0;
+            padding: 0;
         }
-        .signup-container {
-            background-color: #ffff;
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: green 10px rgba(red, green, blue, alpha);
-            width: 320px;
         }
         h2 {
-            text-align: center;
             color: #333;
             margin-bottom: 20px;
         }
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
+        ul {
+            list-style-type: square;
+            line-height: 1.8;
         }
-        input[type='text']
-        input[type='email']
-        input [type='password']
-        input[type='tel']
-        select { 
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        .gender-options {
-         margin-top: 5px;
-        }
-        .gender-options input {
-            margin-right: 5px;
-        }
-        botton {
-            margin-top: 15px;
-            width: 100%;
-            padding: 12px;
+        footer {
             background-color: #007bff;
             color: white;
-            border: none;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-        button:hover {background-color: #0056b3;
+        .tool-category {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
         }
-       </style>
+        </style>
 </head>
 <body>
-    <div class="signup-container">
-        <h2>Medical Sign UP</h2>
-        <form action="#" method="POST">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="Email" required>
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label>Gender</label>
-            <div class="gender-options">
-            <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male" style="display: inline;">Male</label>
-    <input type="radio" id="female" name="gender" value="female" required>
-<label for="female" style="display: inline;">Female</label>
-</div>
-            <label for="profession">profession</label>
-                <select id="profession" name="profession" required>
-                    <option value="">--Select profession--</option>
-                <option value="doctor">Doctor</option>
-                <option value="Nurse">Nurse</option>
-                <option value="Pharmacist">Pharmacist</option>
-                <option value="Lab Technician">Lab Technician</option>
-                <option value="radiologist">Radiologist</option>
-                <option value="other">other</option>
-                </select>
-                <label for="password">password</label>
-                <input type="password" id="password" name="password" required>
-                <label for="Confirm password">Confirm password</label>
-                <input type="password" id="Confirm password" name="Confirm password" required>
-                <botton type="submit">Sign UP</botton>
-                <div class="login link">
-                    Already have an account? <a href="login link">Login</a>
-                </div>
-                 </form>
+    <header>
+        <h1>Welcome to Medcare Hospital</h1>
+        <p>Your health, Our Priority</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Equipment</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="tool-category">
+            <h2>Hospta Equipment Overview</h2>
+            <p>Here are some of essential tools used in our Hospital:</p>
+            <ul>
+                <li>stethoscope - used for heart and lung auscultation</li>
+                <img src="https://static.vecteezy.com/system/resources/previews/019/465/340/original/realistic-medical-stethoscope-on-transparent-background-free-png.png" height="100">
+                <li>thermometer - measures body temperatufe</li>
+                <img src="https://th.bing.com/th/id/R.154e58ad54b8f61cc93f428e4ecfbf41?rik=rxXo5t9NBsSgnA&riu=http%3a%2f%2fwww.cctvkart.com%2fblog%2fwp-content%2fuploads%2f2020%2f05%2fthermometer.jpg&ehk=v9JvotArWJn%2bGFm%2fz90Xd2IL7WYPatCQHkZGrDJrIVM%3d&risl=&pid=ImgRaw&r=0" height="100">
+                <li>Blood Pressure Monitor - checks blood Pressure levels</li>
+                <img src="https://th.bing.com/th/id/R.a1e25ff3202a6c4132eea2e116313f73?rik=AiHiI151GFInXw&pid=ImgRaw&r=0" height="100">
+                <li>ECG Machine - records heart activity</li>
+                <img src="https://th.bing.com/th/id/R.ebad6911fa373497ff42a04a1d2bc3d0?rik=YdVo5hib1GY6Jw&pid=ImgRaw&r=0" height="100">
+                <li>X-ray Machine - captures internal images of the body</li>
+                <img srs="https://c8.alamy.com/comp/2JKRTWT/accurate-xray-of-posterior-view-of-full-human-skeletal-system-with-adult-male-body-contours-3d-rendering-illustration-medical-healthcare-anatomy-o-2JKRTWT.jpg" height="100">
+                <li>Defibrillator - restores normal heartbeat by electrical shock</li>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.Rh8D5g9lybwEvkqC9UZPUAHaE_?rs=1&pid=ImgDetMain&o=7&rm=3" height="100">
+                <li>Syringes and Needles - usedfor injections and drawing blood</li>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.6zgkNJZ2p2PvLLRV_MOwkwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" height="100">
+                <li>Wheelchairs - used for patient movement and mobility</li>
+                <img src="https://m.media-amazon.com/images/I/71aM5TOb3JL._AC_SL1500_.jpg" height="100">
+                <li>HospitalBeds - adjustable beds for patient comfort</li>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.ZlZYQtkx2PauXfVQLomSfwHaE0?rs=1&pid=ImgDetMain&o=7&rm=3" height="100">
+                <li>Ventilator - assits or replaces spontaneos breathing</li>
+                <img src="https://th.bing.com/th/id/OIP.oTDEs99mOopTfAeL09aU5gHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" height="100">
+                <li>Ultrasound Machine - used for internal imaging and pregnancy scans</li>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.51pxY60hJ5WnRignWCBrfAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" height="100">
+                <li>Oxygen cylinders - provide oxygen for patients with breathing issues</li>
+                <img src="https://th.bing.com/th/id/R.6fe678b85d0710b5ac3fea26e41985f1?rik=q2pbt36vljd4cQ&pid=ImgRaw&r=0" height="100">
+                <li>Surgical Intsruments - scissors, forceps, scalpels, for operations</li>
+                <img src="https://th.bing.com/th/id/R.98d1e902ee4e168abc48a0783288661e?rik=1JGxes7rq6bcWA&pid=ImgRaw&r=0" height="150">
+                <li>Sterilizers - ensures all instruments are germ-free</li>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.GYaB_M8KRhSRaMFM7gNeuAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" height="200">
+            </ul>
     </div>
+</div>
+<footer>
+    &copy; 2025 Medcare Hopital. All rights reserved.
+</footer>
 </body>
-</html>
+</htm>
